@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peta Bintang & Jaringan Kolaborasi 2023</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Peta Bintang & Jaringan Kolaborasi 2023</h1>
+    <p>Lebih jago solo atau kolaborasi? Dashboard ini mengungkap jalur sukses para artis di Spotify sepanjang 2023.</p>
+  </header>
+
+  <main class="dashboard-grid">
+    <section id="donutChart" class="chart-card">
+      <div id="donutChart" class="d-flex justify-content-center align-items-center"></div>
+      <h2>Strategi: Solo vs Kolaborasi</h2>
+    </section>
+    <section id="barChart" class="chart-card">
+      <h2>Top Artis Berdasarkan Streams</h2>
+    </section>
+    <section id="mostCollabChart" class="chart-card">
+  <h2>Artis Paling Sering Kolaborasi</h2>
+</section>
+    <main class="dashboard-grid">
+  <section id="donutChart" class="chart-card">
+    <h2>Strategi: Solo vs Kolaborasi</h2>
+  </section>
+  <section id="barChart" class="chart-card">
+    <h2>Top Artis Berdasarkan Streams</h2>
+  </section>
+  <section id="mostCollabChart" class="chart-card">
+    <h2>Artis Paling Sering Kolaborasi</h2>
+  </section>
+</main>
+
+  </main>
+
+  <section id="interaktif">
+    <h2>Telusuri DNA Musikal Artis</h2>
+    <label for="artistFilter">Pilih Artis: </label>
+    <select id="artistFilter"></select>
+
+    <div id="artistStats" class="info-card"></div>
+    <div id="collabTable" class="info-card"></div>
+  </section>
+
+  <footer>
+    <p><small>Data Spotify 2023 | Visualisasi oleh D3.js</small></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
